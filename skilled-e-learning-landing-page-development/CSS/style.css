@@ -1,0 +1,118 @@
+/* COLORS */
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --button: #f02aa6;
+  --light-gray: #d3d3d3;
+  --gray: #808080;
+}
+
+/* GENERAL */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 1440px;
+  margin: auto;
+  font-size: 16px;
+  background-color: var(--light-gray);
+  font-family: sans-serif;
+}
+
+/* MAIN */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin: 3rem 0;
+}
+header button {
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: var(--black);
+  color: var(--white);
+}
+.start {
+  display: flex;
+  position: relative;
+}
+.start-text {
+  width: 500px;
+}
+.start-text h1 {
+  font-size: 70px;
+  margin-bottom: 2rem;
+}
+.start-text p {
+  margin-bottom: 2rem;
+  color: var(--gray);
+}
+.start-text button {
+  padding: 1rem;
+  border: 1px solid var(--light-gray);
+  border-radius: 2rem;
+  background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+}
+.start-img {
+  position: absolute;
+  top: -100px;
+  right: -200px;
+}
+.start-img img {
+  width: 500px;
+}
+main {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 800px;
+  width: 1440px;
+  gap: 40px;
+}
+.cards {
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: var(--white);
+}
+.cards h4 {
+  font-size: 24px;
+  margin: 2rem 0 2rem 0;
+}
+.cards p {
+  color: var(--gray);
+  margin-bottom: 4rem;
+}
+.cards button {
+  background-color: var(--white);
+  color: var(--button);
+  border: 1px solid var(--white);
+}
+.card-1 {
+  font-size: 60px;
+  background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+  color: var(--white);
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem 0;
+  padding: 0 2rem;
+  height: 100px;
+  background-color: var(--black);
+}
+footer button {
+  border: 1px solid var(--black);
+  border-radius: 2rem;
+  padding: 15px;
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+}
+button {
+  cursor: pointer;
+}
